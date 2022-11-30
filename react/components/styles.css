@@ -1,0 +1,21 @@
+  .bullet_container{
+    display: flex;
+    overflow: auto;
+  }
+    .bullet_item-main{
+      max-width: 1280px;
+      margin: 0 auto;
+
+    }
+
+    .bullet_item--title{
+      color: aliceblue;
+    }
+
+    .bullet_item--image{
+
+    }
+
+    .bullet_item--link{
+      text-decoration: none;
+    }
