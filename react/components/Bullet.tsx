@@ -7,14 +7,20 @@ import "./styles.css"
 
 type Props ={
   src: string
+  src2: string
+  src3: string
+
   titleBullet : string
   link : LinkProps
 }
 
-const Bullet = ({src, titleBullet, link} : Props) =>{
+const Bullet = ({src, src2,src3, titleBullet, link} : Props) =>{
   const CSS_HANDLES = [
     "bullet_item-main",
+    "bullet_item--title-container",
+    "bullet_item--triangule",
     "bullet_item--title",
+    "bullet_item--main-image",
     "bullet_item--image",
     "bullet_item--link"
   ]
@@ -22,8 +28,12 @@ const Bullet = ({src, titleBullet, link} : Props) =>{
 
   return (
     <div className={handles["bullet_item-main"]}>
+      <div className={handles["bullet_item--title-container"]}>
+      <div className={handles["bullet_item--triangule"]}></div>
+       <p  className={handles["bullet_item--title"]}>{titleBullet}</p>
+      </div>
+      <div className={handles["bullet_item--main-image"]}>
 
-     <p  className={handles["bullet_item--title"]}>{titleBullet}</p>
       <Link
         className={handles["bullet_item--link"]}
         to = { link.url}
@@ -32,9 +42,19 @@ const Bullet = ({src, titleBullet, link} : Props) =>{
             className={handles["bullet_item--image"]}
             src={src}
             alt={titleBullet}
-
+          />
+           <img
+            className={handles["bullet_item--image"]}
+            src={src2}
+            alt={titleBullet}
+          />
+           <img
+            className={handles["bullet_item--image"]}
+            src={src3}
+            alt={titleBullet}
           />
       </Link>
+      </div>
     </div>
   )
 }
@@ -47,7 +67,7 @@ Bullet.schema = {
       title : "Imagen de Bullet",
       type:"string",
       widget:{
-        "ui:widget": "image-uploader"
+        "ui:widget": "image-uploader",
       }
     }
   }

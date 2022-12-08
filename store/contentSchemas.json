@@ -2,26 +2,37 @@
   "definitions": {
     "BulletGroup": {
       "type": "array",
-      "title": "Bullets Group",
+      "title": "Categories",
       "items": {
         "properties": {
+          "titleBullet": {
+            "title": "Title category",
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": ""
+          },
           "image": {
             "$ref": "app:vtex.native-types#/definitions/url",
             "default": "",
-            "title": "Imagen",
+            "title": "Image cateogry",
             "widget": {
               "ui:widget": "image-uploader"
             }
           },
-          "titleBullet": {
-            "title": "Titulo de Bullet",
-            "$ref": "app:vtex.native-types#/definitions/text",
-            "default": ""
+          "image2": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Image cateogry",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
           },
-          "link": {
-            "title": "Link de Bullet",
-            "$ref": "app:vtex.native-types#/definitions/link",
-            "default": ""
+          "image3": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Image cateogry",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
           }
         }
       }

@@ -13,6 +13,8 @@ export const getBulletsAsTSXList = (
     return <Bullet
       key={index}
       src={bullet.image}
+      src2={bullet.image2}
+      src3={bullet.image3}
       titleBullet ={bullet.titleBullet}
       link = {
         bullet.link
@@ -26,8 +28,5 @@ export const getBulletsAsTSXList = (
       }
     }
   />
-
-
-
   })
 )

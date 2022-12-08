@@ -1,6 +1,8 @@
 export type BulletsSchema = Array<{
+  titleBullet? : string
   image: string
-  titleBullet : string
+  image2: string
+  image3: string
   link? : LinkProps
 }>
 
