@@ -15,6 +15,7 @@ export const getBulletsAsTSXList = (
       src={bullet.image}
       src2={bullet.image2}
       src3={bullet.image3}
+
       titleBullet ={bullet.titleBullet}
       link = {
         bullet.link
@@ -26,7 +27,11 @@ export const getBulletsAsTSXList = (
         openNewTab : false,
         newTab: false
       }
+
     }
   />
+
+
+
   })
 )

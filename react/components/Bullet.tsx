@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "vtex.render-runtime"
-import { LinkProps } from "./BulletTypes"
+import { LinkProps } from './BulletTypes';
 import { useCssHandles } from "vtex.css-handles"
 
 import "./styles.css"
@@ -12,6 +12,8 @@ type Props ={
 
   titleBullet : string
   link : LinkProps
+
+
 }
 
 const Bullet = ({src, src2,src3, titleBullet, link} : Props) =>{
