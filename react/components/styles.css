@@ -42,6 +42,12 @@
     .bullet_item--image{
       margin-bottom: 5px;
     }
+     .bullet_item--image:hover {
+       transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid #ff6900;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+     }
 
     .bullet_item--link{
       text-decoration: none;
