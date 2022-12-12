@@ -16,6 +16,16 @@
       text-transform: uppercase;
     }
 
+    .bullet_item--title-container:hover{
+      transition: all 0.5s ease-in-out;
+      border-bottom: 1px solid #ff6900;
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+
+    }
+
+
+
     .bullet_item--triangule{
       border-top: 15px solid transparent;
       border-right: 15px solid transparent;
