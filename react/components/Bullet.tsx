@@ -39,23 +39,33 @@ const Bullet = ({src, src2,src3, titleBullet, link} : Props) =>{
       <Link
         className={handles["bullet_item--link"]}
         to = { link.url}
-      >
-          <img
+      > <img
             className={handles["bullet_item--image"]}
             src={src}
             alt={titleBullet}
           />
+            </Link>
+
+            <Link
+        className={handles["bullet_item--link"]}
+        to = { link.url}
+      >
            <img
             className={handles["bullet_item--image"]}
             src={src2}
             alt={titleBullet}
           />
+           </Link>
+           <Link
+        className={handles["bullet_item--link"]}
+        to = { link.url}
+      >
            <img
             className={handles["bullet_item--image"]}
             src={src3}
             alt={titleBullet}
           />
-      </Link>
+           </Link>
       </div>
     </div>
   )

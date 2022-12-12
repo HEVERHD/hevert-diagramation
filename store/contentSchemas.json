@@ -8,12 +8,17 @@
           "titleBullet": {
             "title": "Title category",
             "$ref": "app:vtex.native-types#/definitions/text",
-            "default": ""
+            "default": "",
+            "link": {
+              "title": " Link o url de la imagen",
+              "$ref": "app:vtex.native-types#/definitions/link",
+              "default": ""
+            }
           },
           "image": {
             "$ref": "app:vtex.native-types#/definitions/url",
             "default": "",
-            "title": "Image cateogry",
+            "title": "Image cateogry 1",
             "widget": {
               "ui:widget": "image-uploader"
             }
@@ -21,7 +26,12 @@
           "image2": {
             "$ref": "app:vtex.native-types#/definitions/url",
             "default": "",
-            "title": "Image cateogry",
+            "title": "Image cateogry 2",
+            "link": {
+              "title": " Link o url de la imagen",
+              "$ref": "app:vtex.native-types#/definitions/link",
+              "default": ""
+            },
             "widget": {
               "ui:widget": "image-uploader"
             }
@@ -29,7 +39,12 @@
           "image3": {
             "$ref": "app:vtex.native-types#/definitions/url",
             "default": "",
-            "title": "Image cateogry",
+            "title": "Image cateogry3",
+            "link": {
+              "title": " Link o url de la imagen",
+              "$ref": "app:vtex.native-types#/definitions/link",
+              "default": ""
+            },
             "widget": {
               "ui:widget": "image-uploader"
             }
